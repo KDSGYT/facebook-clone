@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "facebook-clone-e6a3c": {
+      "hosting": {
+        "facebook-clone": [
+          "facebook-clone-e6a3c"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "facebook-clone-e6a3c"
+  }
+}
