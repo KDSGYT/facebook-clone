@@ -14,7 +14,6 @@ import { provideDatabase,getDatabase } from '@angular/fire/database';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { provideStorage,getStorage } from '@angular/fire/storage';
 import { MaterialModule } from './shared/material.module';
-import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 
@@ -38,7 +37,6 @@ import { RegisterComponent } from './components/register/register.component';
     provideStorage(() => getStorage()),
     MaterialModule,
     FormsModule,
-
   ],
   providers: [
     ScreenTrackingService,UserTrackingService

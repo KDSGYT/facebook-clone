@@ -1,3 +1,5 @@
+import { HomeComponent } from './components/home/home.component';
+import { FacebookGuard } from './guards/facebook.guard';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LoginComponent } from './components/login/login.component';
@@ -7,7 +9,9 @@ const routes: Routes = [
   {
     path: '',
     // Lazy loading
-    loadChildren: () => import('./components/home/home.module').then(m => m.HomeModule)
+    component: HomeComponent,
+    loadChildren: () => import('./components/home/home.module').then(m => m.HomeModule),
+    canActivate: [FacebookGuard]
   },
   {
     path: 'login',
